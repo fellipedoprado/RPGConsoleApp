@@ -1,5 +1,5 @@
 ﻿// Responsável apenas por iniciar o menu principal
-using RPGConsoleApp.Utils;
+using RPGConsoleApp.src.Utils;
 
 class Program
 {

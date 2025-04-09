@@ -1,0 +1,65 @@
+[
+    {
+        "Type": "Bard",
+        "Name": "Luthien",
+        "Level": 5,
+        "HP": 80,
+        "MP": 120,
+        "Attack": 25,
+        "Defense": 15
+    },
+    {
+        "Type": "Knight",
+        "Name": "Arthur",
+        "Level": 10,
+        "HP": 200,
+        "MP": 50,
+        "Attack": 40,
+        "Defense": 50
+    },
+    {
+        "Type": "Mage",
+        "Name": "Merlin",
+        "Level": 8,
+        "HP": 100,
+        "MP": 150,
+        "Attack": 60,
+        "Defense": 20
+    },
+    {
+        "Type": "Ninja",
+        "Name": "Hanzo",
+        "Level": 7,
+        "HP": 90,
+        "MP": 80,
+        "Attack": 50,
+        "Defense": 25
+    },
+    {
+        "Type": "Thief",
+        "Name": "Locke",
+        "Level": 6,
+        "HP": 85,
+        "MP": 60,
+        "Attack": 45,
+        "Defense": 20
+    },
+    {
+        "Type": "Warrior",
+        "Name": "Conan",
+        "Level": 12,
+        "HP": 250,
+        "MP": 40,
+        "Attack": 55,
+        "Defense": 45
+    },
+    {
+        "Type": "Wizard",
+        "Name": "Gandalf",
+        "Level": 15,
+        "HP": 120,
+        "MP": 200,
+        "Attack": 70,
+        "Defense": 25
+    }
+]
