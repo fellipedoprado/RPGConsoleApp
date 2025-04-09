@@ -29,10 +29,49 @@ namespace RPGConsoleApp.src.Entities
             return $"Nome: {this.Name}, Nível: {this.Level}, Tipo: {this.GetType().Name}, HP: {this.HP}, MP: {this.MP}";
         }
 
-        public virtual string Attack()
+        // Ataque básico
+        public virtual int BasicAttack(Character defender)
         {
-            return this.Name + " atacou com a espada!";
+            int damage = Math.Max(0, this.AttackPoints - defender.DefensePoints);
+            defender.HP -= damage;
+            return damage;
         }
-        
+
+        // Habilidade especial
+        public virtual int SpecialAttack(Character defender)
+        {
+            if (this.MP >= 10)
+            {
+                int damage = Math.Max(0, (this.AttackPoints * 2) - defender.DefensePoints);
+                defender.HP -= damage;
+                this.MP -= 10; // Consome 10 MP
+                return damage;
+            }
+            return 0; // Sem MP suficiente
+        }
+
+        // Chance de crítico
+        public virtual int CriticalAttack(Character defender)
+        {
+            Random random = new Random();
+            bool isCritical = random.Next(0, 100) < 20; // 20% de chance de crítico
+            int damage = Math.Max(0, this.AttackPoints - defender.DefensePoints);
+            if (isCritical)
+            {
+                damage *= 2; // Dano crítico dobra
+            }
+            defender.HP -= damage;
+            return damage;
+        }
+
+        // Método para resetar os valores
+        public void Reset(int HP, int MP, int AttackPoints, int DefensePoints)
+        {
+            this.HP = HP;
+            this.MP = MP;
+            this.AttackPoints = AttackPoints;
+            this.DefensePoints = DefensePoints;
+        }
+
     }
 }
