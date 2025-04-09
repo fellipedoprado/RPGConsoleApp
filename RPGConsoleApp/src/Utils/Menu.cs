@@ -48,15 +48,17 @@ namespace RPGConsoleApp.src.Utils
             }
             else
             {
-                foreach (var character in characters)
+                for (int i = 0; i < characters.Length; i++)
                 {
+                    var character = characters[i];
                     if (character != null)
                     {
-                        WriteLine(character.ToString());
+                        WriteLine($"[{i + 1}] {character.Name} - Nível: {character.Level} - Tipo: {character.GetType().Name} - HP: {character.HP} - MP: {character.MP}");
                     }
                 }
+                WriteLine("=================================");
+
             }
-            WriteLine("=================================");
         }
 
         static void Delete()
