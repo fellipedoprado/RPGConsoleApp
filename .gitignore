@@ -1,0 +1,38 @@
+## Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+
+## Visual Studio Code settings
+.vscode/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## NuGet packages
+*.nupkg
+packages/
+*.snupkg
+
+## Dotnet artifacts
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+## Others
+*.dbmdl
+*.pdb
+*.cache
+*.config
+*.vspscc
+
+## Rider (caso use JetBrains também)
+.idea/
+*.sln.iml
